@@ -1,3 +1,7 @@
 export default function () {
-    console.log("This is printed from contact.js");
+    const content_div = document.createElement('div');
+
+    content_div.innerHTML = `<h1>Contact Page</h1>`;
+    
+    return content_div;
 }
