@@ -2,13 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: {
-        tab_controller: "./src/pages/tab_controller.js",
-        home: "./src/pages/home.js",
-        menu: "./src/pages/menu.js",
-        contact: "./src/pages/contact.js",
+        index: './src/pages/index.js',
     },
+
+    devtool: 'inline-source-map',
 
     plugins:[
         new HtmlWebpackPlugin({
