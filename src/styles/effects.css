@@ -1,0 +1,49 @@
+/*
+    The slidein animations also fadein for stylistic purposes.
+*/
+
+.animation-right-slidein{
+    animation: right-slidein 500ms, fadein 500ms;
+}
+
+@keyframes right-slidein{
+    from{
+        transform: translate(-300px);
+    }
+
+    to{
+       transform: translate(0px);
+    }
+}
+
+/* ------------------------------------------ */
+
+.animation-left-slidein{
+    animation: left-slidein 500ms, fadein 500ms;
+}
+
+@keyframes left-slidein{
+    from{
+        transform: translate(300px);
+    }
+
+    to{
+       transform: translate(0px);
+    }
+}
+
+/* ------------------------------------------ */
+
+.animation-fadein{
+    animation: fadein 500ms;
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

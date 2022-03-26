@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid white;
+}
+
+@font-face {
+    font-family: 'Playball';
+    src: url('../Playball-Regular.ttf') format('truetype');
+}
+
+.selected{
+    opacity: 0.5;
 }
 
 .container{
@@ -25,6 +33,8 @@
 #title{
     padding-left: 50px;
     height: 100%;
+    padding-top: 10px;
+    font-family: 'Playball';
 }
 
 #nav-bar{
@@ -36,9 +46,24 @@
 }
 
 .nav-option{
-    width: 60px;
-    height: 40px;
+    width: 70px;
+    height: 35px;
     margin-right: 100px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    transition: transform 200ms, border-color 200ms;
+    font-family: 'Playball';
+    font-size: 14pt;
+}
+.nav-option:hover{
+    transform: scale(1.1);
+    border-color: #fff;
+}
+.nav-option:active{
+    transform: scale(1);
 }
 
 #dynamic-view{
@@ -46,6 +71,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: rgb(33, 44, 63);
 }
 
 #footer{
@@ -68,5 +94,24 @@
 }
 
 #home-page > #image-text{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'Playball';
+    text-shadow: 3px 2px black;
+}
 
+
+#menu-page{
+    width: 100%;
+    height: 100%;
+}
+
+#contact-page{
+    width: 100%;
+    height: 100%;
 }
