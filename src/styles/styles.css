@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: white
+}
+
+#header{
+    flex: 0 0 12%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#title{
+    padding-left: 50px;
+    height: 100%;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.nav-option{
+    width: 60px;
+    height: 40px;
+    margin-right: 100px;
+}
+
+#dynamic-view{
+    flex: 0 0 76%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer{
+    flex: 0 0 12%;
+    height: 20%;
+    width: 100%;
+    background-color: black;
+}
+
+
+#home-page{
+    width: 70%;
+    height: 100%;
+    background-image: url('../images/fine-dine.jpeg');
+    background-size: 100%;
+    background-position-y: -50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#home-page > #image-text{
+
+}

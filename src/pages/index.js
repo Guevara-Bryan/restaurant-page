@@ -2,6 +2,8 @@ import template from "./template.js"
 import home from "./home.js";
 import menu from "./menu.js";
 import contact from "./contact.js";
+import '../styles/styles.css';
+import '../images/fine-dine.jpeg';
 
 // Logic for tab switching goes here.
 function content(){
