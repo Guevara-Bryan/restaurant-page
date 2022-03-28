@@ -12,7 +12,9 @@ export default function () {
             </nav>
         </div>
         <div id="dynamic-view"></div>
-        <div id="footer"></div>
+        <div id="footer">
+            <a href="https://github.com/Guevara-Bryan" target="_blank">By: Bryan Guevara</a>
+        </div>
     `;
 
     return container;

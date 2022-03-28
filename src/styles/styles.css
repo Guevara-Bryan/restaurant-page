@@ -42,6 +42,20 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer > a, #footer > a:visited{
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: 'Playball';
+    font-size: 16pt;
+}
+
 #title{
     padding-left: 50px;
     height: 100%;
