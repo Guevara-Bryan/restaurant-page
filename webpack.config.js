@@ -4,11 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: {
-        tab_controller: "./src/pages/tab_controller.js",
-        home: "./src/pages/home.js",
-        menu: "./src/pages/menu.js",
-        contact: "./src/pages/contact.js",
+        index: './src/pages/index.js',
     },
+
+    devtool: 'inline-source-map',
 
     plugins:[
         new HtmlWebpackPlugin({
@@ -20,5 +19,22 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+
+    module: {
+        rules:[
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(jpeg|png|jpg|svg|gif|webp)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+        ],
     },
 };
