@@ -6,9 +6,9 @@ export default function () {
         <div id="header">
             <div id="title"> <h1>Giorgio's Fine Dining</h1> </div>
             <nav id="nav-bar">
-                <button class="nav-option" id="home-button" value="home">Home</button>
-                <button class="nav-option" id="menu-button" value="menu">Menu</button>
-                <button class="nav-option" id="contact-button" value="contact">Contact</button>
+                <button class="generic-button" id="home-button" value="home">Home</button>
+                <button class="generic-button" id="menu-button" value="menu">Menu</button>
+                <button class="generic-button" id="contact-button" value="contact">Contact</button>
             </nav>
         </div>
         <div id="dynamic-view"></div>

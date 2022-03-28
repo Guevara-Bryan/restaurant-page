@@ -6,9 +6,25 @@ export default function () {
 
     content_div.innerHTML += `
         <div class="view-title">
-            <h1>Menu</h1>
+            <h1>Contact Us</h1>
         </div>
         <div class="view-container">
+            <form id="contact-form">
+                <div class='form-element'>
+                    <label for='full-name'>Full Name: </label>
+                    <input type='text' id='full-name' name'full-name' required>
+                </div>
+                <div class='form-element'>
+                    <label for='email'>Email: </label>
+                    <input type='email' id='email' name'email' required>
+                </div>
+                <div class='form-element'>
+                    <label for='comments'>Comments: </label>
+                    <textarea id='comments' rows='4' required></textarea>
+                </div>
+
+                <input class='generic-button' type='submit'>
+            </form>
         </div>`
     ;
     

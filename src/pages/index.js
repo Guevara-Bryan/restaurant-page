@@ -16,7 +16,7 @@ function content(){
 
     const page = template();
     const dynamic = page.querySelector("#dynamic-view")
-    const nav_buttons = [... page.querySelectorAll('button[class="nav-option"]')];
+    const nav_buttons = [... page.querySelectorAll('button[class="generic-button"]')];
     nav_buttons[0].classList.add('selected');
 
 
