@@ -35,7 +35,7 @@ export default function () {
         <div class="view-title">
             <h1>Menu</h1>
         </div>
-        <div class="view-container"></div`
+        <div class="view-container"></div>`
     ;
     const view = content_div.querySelector('.view-container');
     

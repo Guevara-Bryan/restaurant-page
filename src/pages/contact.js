@@ -4,9 +4,13 @@ export default function () {
     content_div.classList.add('animation-bottom-slidein');
 
 
-    content_div.innerHTML = `
-        <h1>Contact Page</h1>
-    `;
+    content_div.innerHTML += `
+        <div class="view-title">
+            <h1>Menu</h1>
+        </div>
+        <div class="view-container">
+        </div>`
+    ;
     
     return content_div;
 }
