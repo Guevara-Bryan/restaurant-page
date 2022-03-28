@@ -34,6 +34,22 @@
 
 /* ------------------------------------------ */
 
+.animation-bottom-slidein{
+    animation: bottom-slidein 500ms, fadein 500ms;
+}
+
+@keyframes bottom-slidein{
+    from{
+        transform: translate(0px, 300px);
+    }
+
+    to{
+       transform: translate(0px, 0px);
+    }
+}
+
+/* ------------------------------------------ */
+
 .animation-fadein{
     animation: fadein 500ms;
 }

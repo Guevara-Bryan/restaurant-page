@@ -4,7 +4,7 @@ import chicken_alfredo from '../images/chicken-alfredo-caserolle.jpeg';
 export default function () {
     const content_div = document.createElement('div');
     content_div.setAttribute("id", "menu-page");
-    content_div.classList.add('animation-slide-and-fade-in');
+    content_div.classList.add('animation-bottom-slidein');
 
     const items = [
         {
@@ -29,26 +29,30 @@ export default function () {
         },
     ];
 
-    content_div.innerHTML = `
+    content_div.innerHTML += `
         <div class="view-title">
             <h1>Menu</h1>
         </div>
-        <div class="view-container">
-    `;
-
+        <div class="view-container"></div`
+    ;
+    const view = content_div.querySelector('.view-container');
+    
     items.forEach(item => {
-        content_div.innerHTML += `
-            <div class="item-card">
+        const temp_item = document.createElement('div');
+        temp_item.classList.add('item-card');
+        temp_item.innerHTML = `
                 <div class="item-title"><h2>${item.name}</h2></div>
                 <div class="item-main">
-                    <img class="item-img" src="${item.image}">
+                    <img src="${item.image}">
                     <p>${item.short}</p>
                 </div>
-            </div>
         `;
+        view.appendChild(temp_item);
     });
 
-    content_div.innerHTML += "\n</div>"
+
+        
+
     
     return content_div;
 }
