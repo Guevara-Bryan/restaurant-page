@@ -1,5 +1,7 @@
 import skillet_lasagna from '../images/skillet-lasagna.webp';
 import chicken_alfredo from '../images/chicken-alfredo-caserolle.jpeg';
+import buffalo_style_chicken_pizza from '../images/buffalo-style-chicken-pizza.webp';
+import banana_cream_pie from '../images/banana-cream-pie.webp';
 
 export default function () {
     const content_div = document.createElement('div');
@@ -18,14 +20,14 @@ export default function () {
             image: chicken_alfredo,
         },
         {
-            name: "Chicken Alfredo Caserolle",
-            short: "Tasty caserolle with a base of pasta topped with delicious chicken, cheese, and our special alfredo sause.",
-            image: chicken_alfredo,
+            name: "Buffalo Style Chicken Pizza",
+            short: "The best buffalo style chicken pizza. Made with the perfect dough and with our special house buffalo sauce, topped with our primium grilled chicken.",
+            image: buffalo_style_chicken_pizza,
         },
         {
-            name: "Chicken Alfredo Caserolle",
-            short: "Tasty caserolle with a base of pasta topped with delicious chicken, cheese, and our special alfredo sause.",
-            image: chicken_alfredo,
+            name: "Banana Cream Pie",
+            short: "Our specialty dessert perfect for finishing a night of delicions dining. Our banana pie is sure to satisfy your cravings for a sweet treat.",
+            image: banana_cream_pie,
         },
     ];
 
